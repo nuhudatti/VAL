@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Surprise</title>
+    <title>Valentine's Card</title>
     <link href="https://fonts.googleapis.com/css?family=Solitreo|Pangolin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container" id="cardContainer">
@@ -16,12 +16,7 @@
                 From the moment we met, you've been the most beautiful part of my story. 
                 On this special day of love, I have just one question for you...
             </h2>
-            <h1 class="card-text">Amie, will you be my Valentine? ❤️</h1>
-            <div class="buttons">
-                <button class="btn yes-btn" onclick="showResponse(true)">Yes 💖</button>
-                <button class="btn no-btn" onclick="showResponse(false)">No 😢</button>
-            </div>
-            <p id="responseMessage"></p>
+            <h1 class="card-text">Amie, will you be my Valentine?</h1>
             <div class="heart"></div>
         </div>
         <div class="cover"></div>
@@ -33,15 +28,6 @@
         document.getElementById("cardContainer").addEventListener("click", function () {
             this.classList.toggle("open");
         });
-
-        function showResponse(isYes) {
-            let message = document.getElementById("responseMessage");
-            if (isYes) {
-                message.innerHTML = "😍 Yay! You made my heart so happy! 💕";
-            } else {
-                message.innerHTML = "😔 Oh no, my heart is broken 💔";
-            }
-        }
     </script>
 </body>
 </html>
